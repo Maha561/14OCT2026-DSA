@@ -1,0 +1,89 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        // finding the largest number
+
+        Scanner k = new Scanner(System.in);
+
+        System.out.println("enter the size of an array ");
+
+        int size = k.nextInt();
+
+
+        int[] arr = new int[size];
+
+
+        // getting the value
+
+        for(int i =0;i<arr.length;i++){
+
+            System.out.println("enter a number ");
+
+            arr[i] = k.nextInt();
+        }
+
+        // printing the value
+
+        System.out.println(" printing the value ");
+
+        for(int i =0;i<arr.length;i++){
+
+            System.out.println(arr[i]);
+        }
+
+        // finding the larget element
+
+        System.out.println("finding the larget element");
+
+        int largest = arr[0];
+
+        if(arr.length!=1){
+
+            for(int i=1;i<arr.length;i++){
+
+                if(arr[i]>largest){
+
+                    largest=arr[i];
+                }
+
+            }
+            System.out.println(largest);
+        }
+        else{
+            System.out.println(largest);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}C:\Users\HP\.jdks\openjdk-23.0.2\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.3.3\lib\idea_rt.jar=65488:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.3.3\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\HP\Downloads\helloworld2\untitled22\out\production\untitled22 Main
+enter the size of an array 
+3
+enter a number 
+12
+enter a number 
+123
+enter a number 
+23
+ printing the value 
+12
+123
+23
+finding the larget element
+123
+
+Process finished with exit code 0
