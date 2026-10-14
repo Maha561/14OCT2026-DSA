@@ -24,18 +24,26 @@ public class Main {
 
         int check = k.nextInt();
 
+        boolean result = false;
+
         for(int i =0;i<arr.length;i++){
 
             if(arr[i]==check){
 
-                System.out.println("element found");
-                break;
-            }
-            else{
+                result = true;
 
-                System.out.println("the elemnt is not found ");
-                break;
+
             }
+
+        }
+
+        if(result==false){
+
+            System.out.println("not found");
+        }
+        else{
+
+            System.out.println("found ");
         }
 
 
@@ -62,7 +70,7 @@ public class Main {
     }
 }
 
-C:\Users\HP\.jdks\openjdk-23.0.2\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.3.3\lib\idea_rt.jar=49266:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.3.3\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\HP\Downloads\helloworld2\untitled22\out\production\untitled22 Main
+C:\Users\HP\.jdks\openjdk-23.0.2\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.3.3\lib\idea_rt.jar=53335:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.3.3\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\HP\Downloads\helloworld2\untitled22\out\production\untitled22 Main
 enter a size of an array 
 3
 enter a number
@@ -72,7 +80,7 @@ enter a number
 enter a number
 3
  enter a number to check
-17
-the elemnt is not found 
+14
+not found
 
 Process finished with exit code 0
